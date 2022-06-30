@@ -1,0 +1,15 @@
+h1='Ingrese Producto'
+br
+div(class='jumbotron')
+    form(action="/", method="post", id="formularioProd")
+        div(class='form-group')
+            label(for='nombre') Nombre
+            input(id='nombre', class='form-control', type='text', name='nombre')
+        div(class='form-group')
+            label(for='precio') Precio
+            input(id='precio', class='form-control', type='number', name='precio')
+        div(class='form-group')
+            label(for='thumbnail') Foto Url
+            input(id='thumbnail', class='form-control', type='text', name='thumbnail')
+        div(class='btn-group')
+            button(href='#', class="btn btn-success", aria-current="page") Agregar productos    

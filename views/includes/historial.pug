@@ -1,0 +1,17 @@
+div(class='jumbotron')
+        h2(class="display-2") Productos
+        if productos.length <= 0
+            h3(class="alert alert-danger") No se encontraron Productos
+        else
+            div(class='table-responsive')
+                table(class="table table-dark")
+                    tr(style="color: yellow;")
+                        th Nombre
+                        th Precio
+                        th Foto Url
+                    each prod in productos
+                        tr
+                            td= prod.nombre
+                            td= prod.precio
+                            td
+                                img(style='width:70px; height:60px', src=prod.thumbnail alt="Imagen del producto")  

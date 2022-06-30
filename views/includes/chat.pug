@@ -1,0 +1,11 @@
+h1(style='color:blue')= 'Chat de mensajes'
+br
+div(id='mensajes')
+div(class='jumbotron')
+    form(class="form-inline" onsubmit= "addMessage(this)")
+        div(class='form-group mb-2')
+            input(id='email', class='form-control', type='email', name='nombre' placeholder='Ingrese tu mail porfavor...')
+        div(class="form-group mx-sm-3 mb-2")
+            input(id='texto', class='form-control', type='text', name='nombre' placeholder='Ingrese un mensaje...')
+        button(href='#', class="btn btn-primary mb-2", aria-current="page") Enviar! 
+    
